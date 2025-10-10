@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alev Atak - Academic Homepage</title>
+    
+    <!-- Google Analytics -->
+    <!-- Replace G-XXXXXXXXXX with your actual Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- End Google Analytics -->
+    
     <style>
         * {
             margin: 0;
@@ -152,10 +164,16 @@
             text-decoration: none;
             margin-right: 15px;
             font-size: 0.9em;
+            font-weight: 600;
+            padding: 4px 8px;
+            background: #eff6ff;
+            border-radius: 4px;
+            transition: background 0.2s;
         }
 
         .publication-links a:hover {
             text-decoration: underline;
+            background: #dbeafe;
         }
 
         .contact-section p {
@@ -254,14 +272,14 @@
         <section id="about">
             <p>
                 I am an Associate Professor of Economics at Middle East Technical University (METU) and serve as Associate Director at the Institute of Applied Mathematics. 
-                I hold a Ph.D. in Economics from the University of London, Queen Mary and Westfield College, and have previously served as an Assistant Professor at City University, London (2013-2019), where I developed extensive experience in both research and teaching.
+                I hold a Ph.D. in Economics from Queen Mary, University of London, and have previously served as an Assistant Professor in the United Kingdom, where I developed extensive experience in both research and teaching.
             </p>
             <p>
                 My research interests lie at the intersection of finance and econometrics, with a particular focus on applying advanced computational methods to financial problems. 
                 I specialize in financial econometrics and am particularly interested in the applications of artificial intelligence and machine learning techniques in finance, including deep learning and natural language processing.
             </p>
             <p>
-                I am proficient in multiple programming languages and statistical software, including Stata, Matlab, R, and Python, which I employ extensively in my research. My work has been published in leading journals including the Journal of Econometrics, Econometric Theory, and Borsa Istanbul Review.
+                I am proficient in multiple programming languages and statistical software, including Stata, Matlab, R, and Python, which I employ extensively in my research and teaching.
             </p>
         </section>
 
@@ -276,79 +294,201 @@
         <section id="publications">
             <h2>Publications</h2>
             
-            <h3>Book</h3>
+            <h3>Featured Publications</h3>
             
-            <div class="publication">
-                <div class="publication-title">Econometric Analysis of Cryptocurrency Volatility: A Heterogenous Autoregressive Approach</div>
-                <div class="publication-authors"><strong>Atak, A.</strong></div>
-                <div class="publication-venue">Gazi Kitabevi, Ankara, 2024</div>
-            </div>
-
-            <h3>Journal Articles</h3>
-            
-            <div class="publication">
+            <div class="publication" style="border-left: 4px solid #2563eb; background: #f0f7ff; padding: 15px;">
                 <div class="publication-title">Beyond polarity: How ESG sentiment influences idiosyncratic volatility in the Turkish stock market</div>
                 <div class="publication-authors"><strong>Atak, A.</strong></div>
-                <div class="publication-venue">Borsa Istanbul Review, 24, 10-21, 2024 (SSCI, Q1)</div>
+                <div class="publication-venue">Borsa Istanbul Review, 24(1), 10-21, 2024 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SSCI</span>
+                </div>
+                <div class="publication-stats" style="margin-top: 10px;">
+                    📊 Citations: Updating | 
+                    <a href="https://doi.org/10.1016/j.bir.2024.11.003" style="color: #2563eb; font-weight: 600; text-decoration: underline;">🔗 DOI</a> | 
+                    <a href="#" style="color: #2563eb; font-weight: 600; text-decoration: underline;">📄 PDF</a>
+                </div>
             </div>
 
+            <div class="publication" style="border-left: 4px solid #2563eb; background: #f0f7ff; padding: 15px; margin-top: 15px;">
+                <div class="publication-title">A semiparametric panel model for unbalanced data with application to climate change in the United Kingdom</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Linton, O., Xiao, Z.</div>
+                <div class="publication-venue">Journal of Econometrics, 164(1), 92-115, 2011 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SCI-Expanded</span>
+                    <span style="background: #f59e0b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">🌟 Highly Cited</span>
+                </div>
+                <div class="publication-stats" style="margin-top: 10px;">
+                    📊 Citations: 80+ | 
+                    <a href="https://doi.org/10.1016/j.jeconom.2011.02.019" style="color: #2563eb; font-weight: 600; text-decoration: underline;">🔗 DOI</a> | 
+                    <a href="#" style="color: #2563eb; font-weight: 600; text-decoration: underline;">📄 PDF</a>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Journal Articles</h3>
+            
             <div class="publication">
                 <div class="publication-title">Exploring the sentiment in Borsa Istanbul with deep learning</div>
                 <div class="publication-authors"><strong>Atak, A.</strong></div>
-                <div class="publication-venue">Borsa Istanbul Review, 23, 2023 (SSCI, Q1)</div>
+                <div class="publication-venue">Borsa Istanbul Review, 23(2), 84-95, 2023 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SSCI</span>
+                </div>
+                <div class="publication-stats">
+                    📊 Citations: Updating | 
+                    <a href="https://doi.org/10.1016/j.bir.2023.12.010" style="color: #2563eb; font-weight: 600; text-decoration: underline;">🔗 DOI</a> | 
+                    <a href="#" style="color: #2563eb; font-weight: 600; text-decoration: underline;">📄 PDF</a>
+                </div>
             </div>
 
             <div class="publication">
                 <div class="publication-title">Specification tests for time-varying coefficient panel data models</div>
                 <div class="publication-authors"><strong>Atak, A.</strong>, Tao, T.Y., Zhan, Y., Zhou, Q.</div>
-                <div class="publication-venue">Econometric Theory, 0(0), 1-48, 2023 (SCI-Expanded, Q1)</div>
+                <div class="publication-venue">Econometric Theory, 41(1), 123-170, 2023 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SCI-Expanded</span>
+                </div>
+                <div class="publication-stats">
+                    📊 Citations: Updating | 
+                    <a href="https://doi.org/10.1017/S0266466623000257" style="color: #2563eb; font-weight: 600; text-decoration: underline;">🔗 DOI</a> | 
+                    <a href="#" style="color: #2563eb; font-weight: 600; text-decoration: underline;">📄 PDF</a>
+                </div>
             </div>
 
             <div class="publication">
                 <div class="publication-title">Functional coefficient quantile regression model with time-varying loadings</div>
                 <div class="publication-authors"><strong>Atak, A.</strong>, Montes-Rojas, G., Olmo, J.</div>
-                <div class="publication-venue">Journal of Applied Economics, 26, 1-39, 2023 (SSCI, Q2)</div>
+                <div class="publication-venue">Journal of Applied Economics, 26(1), 2167151, 2023 
+                    <span style="background: #3b82f6; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q2</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SSCI</span>
+                </div>
+                <div class="publication-stats">
+                    <a href="https://www.tandfonline.com/doi/full/10.1080/15140326.2023.2167151" style="color: #2563eb; font-weight: 600; text-decoration: underline;">🔗 DOI</a> | 
+                    <a href="#" style="color: #2563eb; font-weight: 600; text-decoration: underline;">📄 PDF</a>
+                </div>
             </div>
 
             <div class="publication">
                 <div class="publication-title">A factor approach to realized volatility forecasting in the presence of finite jumps and cross-sectional correlation in pricing errors</div>
                 <div class="publication-authors"><strong>Atak, A.</strong>, Kapetanios, G.</div>
-                <div class="publication-venue">Economics Letters, 120(2), 224-228, 2013 (SSCI, Q2)</div>
+                <div class="publication-venue">Economics Letters, 120(2), 224-228, 2013 
+                    <span style="background: #3b82f6; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q2</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SSCI</span>
+                </div>
+                <div class="publication-stats">
+                    <a href="https://doi.org/10.1016/j.econlet.2013.04.026" style="color: #2563eb; font-weight: 600; text-decoration: underline;">🔗 DOI</a> | 
+                    <a href="#" style="color: #2563eb; font-weight: 600; text-decoration: underline;">📄 PDF</a>
+                </div>
             </div>
 
-            <div class="publication">
-                <div class="publication-title">A semiparametric panel model for unbalanced data with application to climate change in the United Kingdom</div>
-                <div class="publication-authors"><strong>Atak, A.</strong>, Linton, O., Xiao, Z.</div>
-                <div class="publication-venue">Journal of Econometrics, 164(1), 92-115, 2011 (SCI-Expanded, Q1)</div>
+            <h3 style="margin-top: 40px;">Book</h3>
+            
+            <div class="publication" style="border-left: 4px solid #8b5cf6; background: #faf5ff; padding: 15px;">
+                <div class="publication-title">📖 Econometric Analysis of Cryptocurrency Volatility: A Heterogeneous Autoregressive Approach</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">Gazi Kitabevi, Ankara, 2024 
+                    <span style="background: #8b5cf6; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">📚 Book</span>
+                </div>
             </div>
 
-            <h3>Selected Conference Presentations</h3>
+            <h3 style="margin-top: 40px;">Working Papers</h3>
+            
+            <div class="publication" style="border-left: 4px solid #f59e0b; padding: 10px;">
+                <div class="publication-title">Financial Attention and Corporate Disclosure Tone: Evidence from Borsa Istanbul's High-Frequency Behavioral Signals</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">
+                    <span style="background: #f59e0b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">R&R</span>
+                    Financial Innovation 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #f59e0b; padding: 10px;">
+                <div class="publication-title">Forecasting Volatility with HAR-RV: Insights from Commodities, Currencies, and Equities</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">
+                    <span style="background: #f59e0b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Under Review</span>
+                    North American Journal of Economics and Finance 
+                    <span style="background: #3b82f6; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q2</span>
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">Sentiment, Attention, and Cryptocurrency Jump Risk: A Textual Hawkes Model</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Linton, O.</div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Work in Progress</span>
+                    With Oliver Linton, University of Cambridge
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">Unveiling Endogeneity: Price Dynamics of Non-Green Cryptocurrencies Amidst Digital Currency Surge and Environmental Concerns</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Linton, O.</div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Work in Progress</span>
+                    With Oliver Linton, University of Cambridge
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">Information Disclosures, Default Risk, and Bank Value</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Zer, I.</div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Work in Progress</span>
+                    With Ilknur Zer, Federal Reserve Board, Washington, D.C.
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">ESG Developments Over Time Using Big Data</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Work in Progress</span>
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">Visualising Shifting Correlations in the Cryptocurrency Market</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Work in Progress</span>
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">Wrong Way Risk: A Unique Approach for Calibration</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Work in Progress</span>
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">Opacity: What Do Banks Hide?</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Work in Progress</span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Policy & Other Publications</h3>
             
             <div class="publication">
-                <div class="publication-title">Decoding ESG Performance with NLP at Borsa Istanbul Sustainability Index</div>
-                <div class="publication-authors"><strong>Atak, A.</strong></div>
-                <div class="publication-venue">47th EBES Conference, Berlin, Germany, April 2024</div>
+                <div class="publication-title">The Future of Computer Trading on Financial Markets</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Linton, O.</div>
+                <div class="publication-venue">UK Government Office for Science Foresight Project, Driver Review Document, 2012</div>
+                <div class="publication-stats">
+                    <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/289058/11-1276-the-future-of-computer-trading-in-financial-markets.pdf" style="color: #2563eb; font-weight: 600; text-decoration: underline;">🔗 PDF</a>
+                </div>
             </div>
 
-            <div class="publication">
-                <div class="publication-title">Financial Sentiment Index with Natural Language Processing</div>
-                <div class="publication-authors"><strong>Atak, A.</strong></div>
-                <div class="publication-venue">42nd EBES Conference, Lisbon, Portugal, January 2023</div>
-            </div>
+            <p style="margin-top: 30px; font-style: italic; color: #666;">
+                For a complete list of publications and citation information, please see my 
+                <a href="https://scholar.google.com/citations?user=o9fnrFsAAAAJ&hl=en" style="color: #2563eb; font-weight: 600; text-decoration: underline;">Google Scholar profile</a> 
+                or <a href="AlevAtak_CV.pdf" style="color: #2563eb; font-weight: 600; text-decoration: underline;">download my CV</a>.
+            </p>
 
-            <div class="publication">
-                <div class="publication-title">Reflexivity analysis of cryptocurrencies with a time-varying semi-parametric Hawkes process</div>
-                <div class="publication-authors"><strong>Atak, A.</strong></div>
-                <div class="publication-venue">4th International Conference on Econometrics and Statistics, Hong Kong, June 2021</div>
-            </div>
-
-            <h3>Research Grants</h3>
-            
-            <div class="publication">
-                <div class="publication-title">Understanding Financial Information Disclosure with Natural Language Processing</div>
-                <div class="publication-authors">Principal Investigator: <strong>Atak, A.</strong></div>
-                <div class="publication-venue">BAP Research Project, METU, 2023-2025</div>
-            </div>
         </section>
 
         <section id="education">
@@ -356,26 +496,26 @@
             
             <div class="education-item">
                 <p><strong>Ph.D. in Economics</strong></p>
-                <p>University of London, Queen Mary and Westfield College</p>
-                <p>School of Economics, England, 2011</p>
+                <p>Queen Mary, University of London</p>
+                <p>School of Economics and Finance, 2011</p>
             </div>
 
             <div class="education-item">
                 <p><strong>MRes in Finance and Economics</strong></p>
                 <p>London School of Economics and Political Science (LSE)</p>
-                <p>London, United Kingdom, 2009</p>
+                <p>Department of Finance, 2009</p>
             </div>
 
             <div class="education-item">
-                <p><strong>M.A. in Economics</strong></p>
+                <p><strong>M.Sc. in Economics</strong></p>
                 <p>University of Guelph</p>
-                <p>Faculty of Economics, Canada, 2005</p>
+                <p>Department of Economics and Finance, Canada, 2005</p>
             </div>
 
             <div class="education-item">
-                <p><strong>B.A. in Economics (English)</strong></p>
+                <p><strong>B.Sc. in Economics</strong></p>
                 <p>Marmara University</p>
-                <p>Faculty of Economic and Administrative Sciences, Turkey, 2004</p>
+                <p>Faculty of Economics, Turkey, 2004</p>
             </div>
         </section>
 
@@ -413,7 +553,7 @@
         </section>
 
         <footer>
-            <p>Last updated: October 2025</p>
+            <p>&copy; 2025 Alev Atak. Last updated: October 2025</p>
         </footer>
     </div>
 </body>
