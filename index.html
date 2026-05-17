@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alev Atak - Academic Homepage</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0CWW0EGVC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-G0CWW0EGVC');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.7;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-weight: normal;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 250px;
+            background: #e0e0e0;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            padding-top: 10px;
+        }
+
+        .title {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .affiliation {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            margin: 30px 0;
+            padding: 15px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+            color: #000;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin: 25px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .research-interests {
+            margin-bottom: 10px;
+        }
+
+        .interest-label {
+            font-weight: bold;
+            display: inline;
+        }
+
+        .publication {
+            margin-bottom: 20px;
+            padding-left: 0;
+        }
+
+        .publication-title {
+            font-style: italic;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .publication-authors {
+            color: #444;
+            margin-bottom: 3px;
+        }
+
+        .publication-venue {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 5px;
+        }
+
+        .publication-stats {
+            margin-top: 8px;
+        }
+
+        .publication-stats a {
+            color: #2563eb;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 45px;
+        }
+
+        .research-grid > section {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 900px) {
+            .research-grid {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+        }
+
+        .contact-section p {
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        .metrics {
+            margin: 20px 0;
+        }
+
+        .metrics p {
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        .academic-links {
+            margin-top: 15px;
+        }
+
+        .academic-links a {
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .academic-links a:hover {
+            text-decoration: underline;
+        }
+
+        .cv-viewer {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+            pointer-events: none;
+        }
+
+        .cv-viewer iframe {
+            pointer-events: auto;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 190px;
+                margin: 0 auto;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Alev Atak</h1>
+        </header>
+
+        <div class="profile-section">
+            <div class="profile-photo">
+                <img src="profile-photo.jpg" alt="Alev Atak">
+            </div>
+            <div class="profile-info">
+                <p class="title">Associate Professor of Economics</p>
+                <p class="affiliation">
+                    Middle East Technical University (METU)<br>
+                    Associate Director, Institute of Applied Mathematics
+                </p>
+                <div class="academic-links">
+                    <a href="https://scholar.google.com/citations?user=o9fnrFsAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                    <a href="https://orcid.org/0000-0002-2319-9193" target="_blank">ORCID</a>
+                    <a href="https://avesis.metu.edu.tr/alevatak" target="_blank">METU Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#working-papers">Working Papers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section id="about">
+            <p>
+               I am an Associate Professor of Economics at Middle East Technical University (METU), where I also serve as Associate Director of the Institute of Applied Mathematics (IAM).
+            </p>
+            <p>
+               After completing my Ph.D. at Queen Mary, University of London, I held a faculty position in the UK before returning to Türkiye. 
+            </p>
+            <p>
+                My research sits at the intersection of financial econometrics and machine learning. I am particularly interested in how deep learning and natural language processing can illuminate dynamics in financial markets. 
+            </p>
+            <p> I teach and conduct research using Python. 
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="research-interests">
+                <p><span class="interest-label">Primary:</span> Finance, Econometrics</p>
+                <p><span class="interest-label">Secondary:</span> Financial Econometrics, Machine Learning, Deep Learning, Natural Language Processing</p>
+            </div>
+        </section>
+
+        <div class="research-grid">
+            <section id="publications">
+                <h2>Publications</h2>
+                
+                <h3 style="margin-top: 20px;">Book</h3>
+            
+            <div class="publication" style="border-left: 4px solid #8b5cf6; background: #faf5ff; padding: 15px;">
+                <div class="publication-title">📖 Econometric Analysis of Cryptocurrency Volatility: A Heterogeneous Autoregressive Approach</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">Gazi Kitabevi, Ankara, 2024 
+                    <span style="background: #8b5cf6; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">📚 Book</span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Journal Articles</h3>
+            
+            <div class="publication">
+                <div class="publication-title">Beyond polarity: How ESG sentiment influences idiosyncratic volatility in the Turkish stock market</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">Borsa Istanbul Review, 24(1), 10-21, 2024 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SSCI</span>
+                </div>
+                <div class="publication-stats">
+                    <a href="https://doi.org/10.1016/j.bir.2024.11.003">🔗 DOI</a>
+                </div>
+            </div>
+            
+            <div class="publication">
+                <div class="publication-title">Exploring the sentiment in Borsa Istanbul with deep learning</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">Borsa Istanbul Review, 23(2), 84-95, 2023 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SSCI</span>
+                </div>
+                <div class="publication-stats">
+                    <a href="https://doi.org/10.1016/j.bir.2023.12.010">🔗 DOI</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Specification tests for time-varying coefficient panel data models</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Tao, T.Y., Zhan, Y., Zhou, Q.</div>
+                <div class="publication-venue">Econometric Theory, 41(1), 123-170, 2023 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SCI-Expanded</span>
+                </div>
+                <div class="publication-stats">
+                    <a href="https://doi.org/10.1017/S026646662300018X">🔗 DOI</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Functional coefficient quantile regression model with time-varying loadings</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Montes-Rojas, G., Olmo, J.</div>
+                <div class="publication-venue">Journal of Applied Economics, 26(1), 2167151, 2023 
+                    <span style="background: #3b82f6; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q2</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SSCI</span>
+                </div>
+                <div class="publication-stats">
+                    <a href="https://www.tandfonline.com/doi/full/10.1080/15140326.2023.2167151">🔗 DOI</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">A factor approach to realized volatility forecasting in the presence of finite jumps and cross-sectional correlation in pricing errors</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Kapetanios, G.</div>
+                <div class="publication-venue">Economics Letters, 120(2), 224-228, 2013 
+                    <span style="background: #3b82f6; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q2</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SSCI</span>
+                </div>
+                <div class="publication-stats">
+                    <a href="https://doi.org/10.1016/j.econlet.2013.03.051">🔗 DOI</a>
+                </div>
+            </div>
+            
+            <div class="publication">
+                <div class="publication-title">A semiparametric panel model for unbalanced data with application to climate change in the United Kingdom</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Linton, O., Xiao, Z.</div>
+                <div class="publication-venue">Journal of Econometrics, 164(1), 92-115, 2011 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                    <span style="background: #6366f1; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">SCI-Expanded</span>
+                    <span style="background: #f59e0b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 4px;">🌟 Highly Cited</span>
+                </div>
+                <div class="publication-stats">
+                    <a href="https://doi.org/10.1016/j.jeconom.2011.02.008">🔗 DOI</a>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Policy & Other Publications</h3>
+            
+            <div class="publication">
+                <div class="publication-title">The Future of Computer Trading on Financial Markets</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Linton, O.</div>
+                <div class="publication-venue">UK Government Office for Science Foresight Project, Driver Review Document, 2012</div>
+            </div>
+            </section>
+
+            <section id="working-papers">
+                <h2>Working Papers</h2>
+            
+            <div class="publication" style="border-left: 4px solid #10b981; background: #f0fdf4; padding: 10px;">
+                <div class="publication-title">Attention Predicts, Tone Reflects: Mixed-Frequency Evidence on Volatility Drivers in Borsa Istanbul</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Forthcoming</span>
+                    Financial Innovation 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #f59e0b; padding: 10px;">
+                <div class="publication-title">Attention-Amplified Sentiment and Jump Risk in Bitcoin and Ethereum Markets: A Text-Augmented Hawkes Framework</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Franses, P.H.</div>
+                <div class="publication-venue">
+                    <span style="background: #f59e0b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">R&amp;R</span>
+                    International Review of Financial Analysis 
+                    <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; margin-left: 8px;">Q1</span>
+                    <br>With Philip Hans Franses, Erasmus University Rotterdam
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #f59e0b; padding: 10px;">
+                <div class="publication-title">Volatility Regime Probabilities and the Horizon Profile of Tail Risk</div>
+                <div class="publication-authors"><strong>Atak, A.</strong></div>
+                <div class="publication-venue">
+                    <span style="background: #f59e0b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Under Review</span>
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">The Crowd's Curiosity: Aggregate Attention and the Amplification of Financial Uncertainty</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Linton, O.</div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Working Paper</span>
+                    With Oliver Linton, University of Cambridge
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">Words into Watts: EU Policy Urgency, Gas Dependence, and Renewable Energy Deployment</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Stengos, T., Deniz, P.</div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Working Paper</span>
+                    With Thanasis Stengos, University of Guelph, and Pınar Deniz, Marmara University
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">Mind the Stance Gap: State-Dependent Filtering in the Federal Reserve Communications</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Kısacıkoğlu, B.</div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Working Paper</span>
+                    With Burçin Kısacıkoğlu, Bilkent University
+                </div>
+            </div>
+
+            <div class="publication" style="border-left: 4px solid #64748b; padding: 10px;">
+                <div class="publication-title">Sentiment-Modulated Time-Varying Parameter VAR with Stochastic Volatility: A State-Space Framework for Sentiment-Conditional Energy-Market Transmission</div>
+                <div class="publication-authors"><strong>Atak, A.</strong>, Alexeev, V.</div>
+                <div class="publication-venue">
+                    <span style="background: #64748b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85em;">Work in Progress</span>
+                    With Vitali Alexeev, University of Technology Sydney
+                </div>
+            </div>
+            </section>
+        </div>
+
+        <p style="margin-top: 30px; margin-bottom: 45px; font-style: italic; color: #666;">
+            For a complete list of publications and citation information, please see my 
+            <a href="https://scholar.google.com/citations?user=o9fnrFsAAAAJ&hl=en" style="color: #2563eb; font-weight: 600; text-decoration: underline;">Google Scholar profile</a>.
+        </p>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-section">
+                <p><strong>Alev Atak</strong></p>
+                <p>Middle East Technical University (METU)</p>
+                <p>Department of Economics</p>
+                <p>Üniversiteler Mahallesi, Dumlupınar Bulvarı No:1</p>
+                <p>06800 Çankaya/Ankara</p>
+                <p>Turkey</p>
+                <p style="margin-top: 15px;">E-mail: <a href="mailto:alevatak@metu.edu.tr">alevatak@metu.edu.tr</a></p>
+            </div>
+            
+            <div class="metrics" style="margin-top: 30px;">
+                <h3 style="font-size: 1.1em; font-weight: normal; margin-bottom: 10px;">Citation Metrics</h3>
+                <p>Citations (Google Scholar): 122</p>
+                <p>h-index: 6</p>
+                <p>i10-index: 4</p>
+                <p style="margin-top: 10px;">Total Publications: 13</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Alev Atak. Last updated: May 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
